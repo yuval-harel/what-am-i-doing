@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<HTML>
-    <HEAD>
-    
-    </HEAD>
-    <body>
-        <p>hello</p>
-        <p>another one</p>
-    </body>  
-</HTML>
+<div id="ascii-grid"></div>
+
+<style>
+  body {
+    margin: 0;
+    background-color: #0b0b0b;
+    color: #a0a0a0;
+    overflow: hidden; /* Prevents scrollbars */
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 12px; /* Crucial for a perfectly square grid layout */
+  }
+
+  #ascii-grid {
+    white-space: pre; /* Tells the browser to respect our line breaks */
+    width: 100vw;
+    height: 100vh;
+  }
+</style>
